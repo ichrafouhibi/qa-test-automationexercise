@@ -1,0 +1,6 @@
+ID;Titre;êtapes;RÇsultat Attendu;RÇsultat ObservÇ;Statut
+TC021;Envoyer un message valide;"1. Aller sur page ""Contact Us""2. Remplir tous les champs correctement3. Cliquer sur ""Send""";Message de confirmation d?envoi;-;∑ tester
+TC022;Envoyer un message avec email invalide;"1. Remplir formulaire avec un email incorrect2. Cliquer sur ""Send""";Message d?erreur de validation d?email;-;∑ tester
+TC023;Envoyer un message avec champs vides;"1. Cliquer sur ""Send"" sans remplir les champs";Blocage et messages de validation sur les champs obligatoires;-;∑ tester
+TC024;VÇrifier la rÇactivitÇ du formulaire;1. Remplir formulaire et envoyer rapidement plusieurs fois;Le systäme gäre correctement (pas de doublons, etc.);-;∑ tester
+TC025;VÇrifier les piäces jointes (si possible);1. Ajouter une piäce jointe dans le formulaire2. Envoyer;Piäce jointe reáue correctement;-;∑ tester

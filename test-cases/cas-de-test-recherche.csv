@@ -1,0 +1,6 @@
+ID;Titre;tapes;R‚sultat Attendu;R‚sultat Observ‚;Statut
+TC026;Recherche avec mot-cl‚ valide;1. Entrer un mot-cl‚ existant dans la barre de recherche2. Lancer la recherche;R‚sultats pertinents affich‚s;-;· tester
+TC027;Recherche avec mot-cl‚ invalide;1. Entrer un mot-cl‚ inexistant2. Lancer la recherche;"Message ""No products found""";-;· tester
+TC028;Recherche sans mot-cl‚;1. Lancer la recherche sans saisir de mot-cl‚;Message invitant … saisir un mot-cl‚ ou r‚sultats par d‚faut;-;· tester
+TC029;Recherche avec filtres (cat‚gorie, prix);1. Saisir mot-cl‚2. Appliquer un filtre (ex: cat‚gorie, prix);R‚sultats filtr‚s correctement;-;· tester
+TC030;Recherche rapide (autocomplete);1. Taper un mot-cl‚2. V‚rifier la suggestion de produits avant validation;Suggestions pertinentes apparaissent;-;· tester
