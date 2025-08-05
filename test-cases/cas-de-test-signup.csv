@@ -1,6 +1,11 @@
-ID;Titre;tapes;R‚sultat Attendu;R‚sultat Observ‚;Statut
-TC001;Inscription avec donn‚es valides;"1. Aller sur ""Signup / Login""2. Entrer nom + email valides3. Compl‚ter formulaire4. Cliquer sur ""Create Account""";"Compte cr‚‚, redirection vers ""Account Created""";-;· tester
-TC002;Inscription avec email d‚j… utilis‚;"1. Aller sur ""Signup / Login""2. Entrer un email d‚j… enregistr‚3. Cliquer sur ""Signup""";"Message ""Email Address already exist!""";-;· tester
-TC003;Inscription sans mot de passe;"1. Aller sur ""Signup / Login""2. Ne pas remplir le champ mot de passe3. Valider";Message d?erreur ou blocage de validation;-;· tester
-TC004;Inscription avec email invalide;"1. Entrer un email incorrect (ex: ichraf.test.com)2. Cliquer sur ""Signup""";Message d?erreur ou refus de validation;-;· tester
-TC005;Inscription avec champs vides;"1. Cliquer sur ""Signup"" sans remplir les champs";Blocage + messages de validation;-;· tester
+ID;Titre;tapes;R‚sultat Attendu;Résultat Observé;Statut
+TC001;Inscription avec données valides;"1. Aller sur ""Signup / Login""2. Entrer nom + email valides3. Compléter formulaire4. Cliquer sur ""Create Account""";"Compte créé, redirection vers ""Account Created""";Message “Account Created” affiché, j’ai été redirigée vers la page d’accueil;Passed
+TC002;Inscription avec email déjà  utilisé;"1. Aller sur ""Signup / Login""2. Entrer un email déjà enregistré‚3. Cliquer sur ""Signup""";"Message ""Email Address already exist!""";Message “Email Address already exist!” bien affiché;Passed
+TC003;Inscription sans mot de passe;"1. Aller sur ""Signup / Login""2. Ne pas remplir le champ mot de passe3. Valider";Message d'erreur ou blocage de validation;Message navigateur “Veuillez renseigner ce champ”;Passed
+TC004;Inscription avec email invalide;"1. Entrer un email incorrect (ex: ichraf.test.com)2. Cliquer sur ""Signup""";Message d'erreur ou refus de validation;"ichraf.test.com ? ""Veuillez inclure '@' dans l'adresse e-mail""
+
+ichraf@ ? ""Veuillez saisir la partie manquante après le symbole '@'""
+
+@test.com ? ""Veuillez saisir la partie manquante avant le caractère '@'""";Passed
+TC005;Inscription avec champs vides;"1. Cliquer sur ""Signup"" sans remplir les champs";Blocage + messages de validation;"Le navigateur affiche “Veuillez renseigner ce champ” sur le champ nom
+";Passed
