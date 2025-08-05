@@ -1,0 +1,6 @@
+ID;Titre;tapes;R‚sultat Attendu;R‚sultat Observ‚;Statut
+TC001;Inscription avec donn‚es valides;"1. Aller sur ""Signup / Login""2. Entrer nom + email valides3. Compl‚ter formulaire4. Cliquer sur ""Create Account""";"Compte cr‚‚, redirection vers ""Account Created""";-;· tester
+TC002;Inscription avec email d‚j… utilis‚;"1. Aller sur ""Signup / Login""2. Entrer un email d‚j… enregistr‚3. Cliquer sur ""Signup""";"Message ""Email Address already exist!""";-;· tester
+TC003;Inscription sans mot de passe;"1. Aller sur ""Signup / Login""2. Ne pas remplir le champ mot de passe3. Valider";Message d?erreur ou blocage de validation;-;· tester
+TC004;Inscription avec email invalide;"1. Entrer un email incorrect (ex: ichraf.test.com)2. Cliquer sur ""Signup""";Message d?erreur ou refus de validation;-;· tester
+TC005;Inscription avec champs vides;"1. Cliquer sur ""Signup"" sans remplir les champs";Blocage + messages de validation;-;· tester
