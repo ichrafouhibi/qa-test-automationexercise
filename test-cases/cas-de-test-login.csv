@@ -1,4 +1,6 @@
-ID;Titre du test;tapes;R‚sultat attendu;R‚sultat observ‚;Statut
-TC001;Test login valide;1. Aller sur Login2. Entrer email/mdp3. Cliquer sur Login;Redirection vers le compte utilisateur;OK;Pass‚
-TC002;Test login invalide;1. Aller sur Login2. Entrer mauvais mdp3. Cliquer sur Login;"Message d?erreur : ""Mot de passe incorrect""";Pas d?erreur affich‚e;chou‚
-TC003;"Test bouton ""Logout""";1. Se connecter2. Cliquer sur Logout;Retour … la page d?accueil;OK;Pass‚
+ID;Titre;Étapes;Résultat Attendu;Résultat Observé;Statut
+TC006;Connexion avec données valides;"1. Aller sur ""Signup / Login""2. Entrer email + mot de passe corrects3. Cliquer sur ""Login""";"Redirection vers la page ""Logged in as [nom]""";-;À tester
+TC007;Connexion avec mauvais mot de passe;"1. Aller sur ""Signup / Login""2. Entrer bon email + mauvais mot de passe3. Cliquer sur ""Login""";"Message d’erreur : ""Your email or password is incorrect""";-;À tester
+TC008;Connexion avec email inconnu;"1. Entrer un email qui n'existe pas2. Cliquer sur ""Login""";Message d’erreur identique;-;À tester
+TC009;Connexion avec champs vides;"1. Cliquer sur ""Login"" sans remplir les champs";Blocage + messages de validation;-;À tester
+TC010;"Bouton ""Logout""";"1. Se connecter2. Cliquer sur ""Logout""3. Vérifier le retour à la page d’accueil";"Déconnexion réussie, bouton ""Login"" réaffiché";-;À tester
