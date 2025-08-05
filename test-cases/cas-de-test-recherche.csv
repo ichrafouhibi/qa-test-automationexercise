@@ -1,6 +1,14 @@
 ID;Titre;tapes;R‚sultat Attendu;R‚sultat Observ‚;Statut
-TC026;Recherche avec mot-cl‚ valide;1. Entrer un mot-cl‚ existant dans la barre de recherche2. Lancer la recherche;R‚sultats pertinents affich‚s;-;· tester
-TC027;Recherche avec mot-cl‚ invalide;1. Entrer un mot-cl‚ inexistant2. Lancer la recherche;"Message ""No products found""";-;· tester
-TC028;Recherche sans mot-cl‚;1. Lancer la recherche sans saisir de mot-cl‚;Message invitant … saisir un mot-cl‚ ou r‚sultats par d‚faut;-;· tester
-TC029;Recherche avec filtres (cat‚gorie, prix);1. Saisir mot-cl‚2. Appliquer un filtre (ex: cat‚gorie, prix);R‚sultats filtr‚s correctement;-;· tester
-TC030;Recherche rapide (autocomplete);1. Taper un mot-cl‚2. V‚rifier la suggestion de produits avant validation;Suggestions pertinentes apparaissent;-;· tester
+TC026;Recherche avec mot-cl‚ valide;1. Entrer un mot-cl‚ existant dans la barre de recherche2. Lancer la recherche;R‚sultats pertinents affich‚s;Produits contenant le mot-clé “Dress” affichés correctement;Passed
+TC027;Recherche avec mot-cl‚ invalide;1. Entrer un mot-cl‚ inexistant2. Lancer la recherche;"Message ""No products found""";"Pas de message affiché
+
+La liste des produits est vide, aucun résultat";Passed (comportement acceptable, mais améliorable)
+TC028;Recherche sans mot-cl‚;1. Lancer la recherche sans saisir de mot-cl‚;Message invitant … saisir un mot-cl‚ ou r‚sultats par d‚faut;Le système affiche tous les produits;Passed
+TC029;Recherche avec filtres (cat‚gorie, prix);1. Saisir mot-cl‚2. Appliquer un filtre (ex: cat‚gorie, prix);R‚sultats filtr‚s correctement;"Aucun filtre de prix disponible
+
+Après avoir saisi “Blue” et cliqué sur Search, puis choisi la catégorie Women > Tops, le système ignore totalement le mot-clé “Blue”
+
+Il affiche tous les produits de la catégorie, même ceux sans le mot-clé";Echouée
+TC030;Recherche rapide (autocomplete);1. Taper un mot-cl‚2. V‚rifier la suggestion de produits avant validation;Suggestions pertinentes apparaissent;"Aucune suggestion automatique n’apparaît pendant la frappe
+
+Il faut obligatoirement cliquer sur Search ou appuyer sur Entrée";Echouée
