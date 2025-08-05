@@ -1,6 +1,6 @@
 ID;Titre;tapes;R‚sultat Attendu;R‚sultat Observ‚;Statut
-TC016;Commander un produit;"1. Ajouter un produit au panier2. Cliquer sur ""Checkout""3. Remplir les informations de paiement4. Valider la commande";Confirmation de commande affich‚e avec un num‚ro de suivi;-;· tester
-TC017;Commander avec adresse invalide;1. Ajouter un produit2. Passer … la page paiement3. Entrer une adresse incomplŠte ou invalide4. Valider;Message d?erreur sur le formulaire d?adresse;-;· tester
-TC018;Commander sans produit dans le panier;"1. Aller sur ""Checkout"" sans produit dans le panier";Blocage ou message indiquant que le panier est vide;-;· tester
-TC019;Modifier la quantit‚ avant commande;1. Ajouter produit2. Modifier quantit‚ dans panier3. Passer commande;Montant total reflŠte la quantit‚ modifi‚e;-;· tester
-TC020;Annuler commande;"1. Commencer une commande2. Cliquer sur ""Annuler"" ou revenir … la page pr‚c‚dente";Retour … la page pr‚c‚dente sans validation de commande;-;· tester
+TC016;Commander un produit;"1. Ajouter un produit au panier2. Cliquer sur ""Checkout""3. Remplir les informations de paiement4. Valider la commande";Confirmation de commande affich‚e avec un num‚ro de suivi;"Message ""Order Placed! Congratulations! Your order has been confirmed!"" affiché";Passed
+TC017;Commander sans produit dans le panier;"1. Aller sur ""Checkout"" sans produit dans le panier";Blocage ou message indiquant que le panier est vide; Pas de bouton Checkout ni possibilité de passer commande sans produit dans le panier;Passed
+TC018;Modifier la quantit‚ avant commande;1. Ajouter produit2. Modifier quantit‚ dans panier3. Passer commande;Montant total reflŠte la quantit‚ modifi‚e;Le montant total s’adapte correctement à la quantité modifiée;Passed
+TC019;Annuler commande;"1. Commencer une commande2. Cliquer sur ""Annuler"" ou revenir … la page pr‚c‚dente";Retour … la page pr‚c‚dente sans validation de commande;"En cliquant sur revenir en arrière, la commande est annulée et on revient à la page précédente
+";Passed
