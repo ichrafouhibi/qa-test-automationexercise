@@ -1,6 +1,14 @@
 ID;Titre;tapes;R‚sultat Attendu;R‚sultat Observ‚;Statut
-TC011;Ajout d?un produit au panier;"1. Aller sur une page produit2. Cliquer sur ""Add to cart""3. V‚rifier que le produit est ajout‚";"Message ""Product added""Produit visible dans le panier";-;· tester
-TC012;V‚rifier contenu du panier;"1. Ajouter un produit2. Aller sur ""Cart""";Produit affich‚ avec image, nom, prix, quantit‚;-;· tester
-TC013;Modifier la quantit‚ d?un produit;"1. Aller dans ""Cart""2. Changer la quantit‚ d?un produit … 3";Quantit‚ mise … jourTotal mis … jour;-;· tester
-TC014;Supprimer un produit du panier;"1. Aller sur ""Cart""2. Cliquer sur ""X"" (supprimer)";Le produit disparaŒt du panier;-;· tester
-TC015;Panier vide;1. Supprimer tous les produits2. V‚rifier le message affich‚;"Message ""Cart is empty"" ou ‚quivalent";-;· tester
+TC011;Ajout d?un produit au panier;"1. Aller sur une page produit2. Cliquer sur ""Add to cart""3. V‚rifier que le produit est ajout‚";"Message ""Product added""Produit visible dans le panier";Message “Added! Your product has been added to cart. View Cart” affiché, produit visible dans le panier;Passed
+TC012;V‚rifier contenu du panier;"1. Ajouter un produit2. Aller sur ""Cart""";Produit affiché avec image, nom, prix, quantité;"Colonne Item : image affichée
+
+Colonne Description : ""Blue Top Women > Tops""
+
+Price : ""Rs. 500""
+
+Quantity : 1
+
+Total : ""Rs. 500""";Passed
+TC013;Modifier la quantit‚ d?un produit;"1. Aller dans ""Cart""2. Changer la quantit‚ d?un produit … 3";Quantit‚ mise … jourTotal mis … jour;Quantité modifiée avec succès, total du panier mis à jour correctement;Passed
+TC014;Supprimer un produit du panier;"1. Aller sur ""Cart""2. Cliquer sur ""X"" (supprimer)";Le produit disparaŒt du panier;Produit supprimé et disparaît bien du panier;Passed
+TC015;Panier vide;1. Supprimer tous les produits2. V‚rifier le message affich‚;"Message ""Cart is empty"" ou ‚quivalent";"Message affiché ? ""Cart is empty! Click here to buy products.""";Passed
