@@ -1,6 +1,8 @@
 ID;Titre;tapes;R‚sultat Attendu;R‚sultat Observ‚;Statut
-TC021;Envoyer un message valide;"1. Aller sur page ""Contact Us""2. Remplir tous les champs correctement3. Cliquer sur ""Send""";Message de confirmation d?envoi;-;· tester
-TC022;Envoyer un message avec email invalide;"1. Remplir formulaire avec un email incorrect2. Cliquer sur ""Send""";Message d?erreur de validation d?email;-;· tester
-TC023;Envoyer un message avec champs vides;"1. Cliquer sur ""Send"" sans remplir les champs";Blocage et messages de validation sur les champs obligatoires;-;· tester
-TC024;V‚rifier la r‚activit‚ du formulaire;1. Remplir formulaire et envoyer rapidement plusieurs fois;Le systŠme gŠre correctement (pas de doublons, etc.);-;· tester
-TC025;V‚rifier les piŠces jointes (si possible);1. Ajouter une piŠce jointe dans le formulaire2. Envoyer;PiŠce jointe re‡ue correctement;-;· tester
+TC021;Envoyer un message valide;"1. Aller sur page ""Contact Us""2. Remplir tous les champs correctement3. Cliquer sur ""Send""";Message de confirmation d?envoi;"Message affiché ? ""Success! Your details have been submitted successfully.""";Passed
+TC022;Envoyer un message avec email invalide;"1. Remplir formulaire avec un email incorrect2. Cliquer sur ""Send""";Message d?erreur de validation d?email;Le navigateur affiche des messages d’erreur adaptés à chaque type d'email invalide;Passed
+TC023;Envoyer un message avec champs vides;"1. Cliquer sur ""Send"" sans remplir les champs";Blocage et messages de validation sur les champs obligatoires;"Le navigateur bloque uniquement si le champ Email est vide ou invalide
+
+Les champs Nom, Sujet et Message peuvent être laissés vides sans blocage";Échoué
+TC024;V‚rifier la r‚activit‚ du formulaire;1. Remplir formulaire et envoyer rapidement plusieurs fois;Le systŠme gŠre correctement (pas de doublons, etc.);Une alerte “Press OK to proceed!” empêche de cliquer plusieurs fois rapidement sur Submit;Passed
+TC025;V‚rifier les piŠces jointes (si possible);1. Ajouter une piŠce jointe dans le formulaire2. Envoyer;PiŠce jointe re‡ue correctement;Impossible de vérifier la réception de la pièce jointe côté serveur/utilisateur;À tester / Limité (test partiel)
