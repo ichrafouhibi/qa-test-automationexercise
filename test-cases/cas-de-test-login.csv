@@ -1,0 +1,4 @@
+ID;Titre du test;tapes;R‚sultat attendu;R‚sultat observ‚;Statut
+TC001;Test login valide;1. Aller sur Login2. Entrer email/mdp3. Cliquer sur Login;Redirection vers le compte utilisateur;OK;Pass‚
+TC002;Test login invalide;1. Aller sur Login2. Entrer mauvais mdp3. Cliquer sur Login;"Message d?erreur : ""Mot de passe incorrect""";Pas d?erreur affich‚e;chou‚
+TC003;"Test bouton ""Logout""";1. Se connecter2. Cliquer sur Logout;Retour … la page d?accueil;OK;Pass‚
