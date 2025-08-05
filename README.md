@@ -54,5 +54,5 @@ Ce projet a pour but de documenter des cas de test manuels réalisés sur le sit
 ## 🙋‍♀️ Réalisé par
 
 **Ichraf Ouhibi** – Testeuse QA passionnée  
-📫 [linkedin.com/in/ouhibi-ichraf](https://www.linkedin.com/in/ouhibi-ichraf)
+📫 [linkedin.com/in/ouhibi-ichraf](https://www.linkedin.com/in/ouhibi-ichraf-45b336136/)
 
