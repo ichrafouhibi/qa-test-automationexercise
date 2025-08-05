@@ -1,6 +1,12 @@
 ID;Titre;Étapes;Résultat Attendu;Résultat Observé;Statut
-TC006;Connexion avec données valides;"1. Aller sur ""Signup / Login""2. Entrer email + mot de passe corrects3. Cliquer sur ""Login""";"Redirection vers la page ""Logged in as [nom]""";-;À tester
-TC007;Connexion avec mauvais mot de passe;"1. Aller sur ""Signup / Login""2. Entrer bon email + mauvais mot de passe3. Cliquer sur ""Login""";"Message d’erreur : ""Your email or password is incorrect""";-;À tester
-TC008;Connexion avec email inconnu;"1. Entrer un email qui n'existe pas2. Cliquer sur ""Login""";Message d’erreur identique;-;À tester
-TC009;Connexion avec champs vides;"1. Cliquer sur ""Login"" sans remplir les champs";Blocage + messages de validation;-;À tester
-TC010;"Bouton ""Logout""";"1. Se connecter2. Cliquer sur ""Logout""3. Vérifier le retour à la page d’accueil";"Déconnexion réussie, bouton ""Login"" réaffiché";-;À tester
+TC006;Connexion avec données valides;"1. Aller sur ""Signup / Login""2. Entrer email + mot de passe corrects3. Cliquer sur ""Login""";"Redirection vers la page ""Logged in as [nom]"""; Logged in as Ichraf QA;Passed
+TC007;Connexion avec mauvais mot de passe;"1. Aller sur ""Signup / Login""2. Entrer bon email + mauvais mot de passe3. Cliquer sur ""Login""";"Message d’erreur : ""Your email or password is incorrect""";"Message affiché ? ""Your email or password is incorrect!""
+";Passed
+TC008;Connexion avec email inconnu;"1. Entrer un email qui n'existe pas2. Cliquer sur ""Login""";Message d’erreur identique;"Message affiché ? ""Your email or password is incorrect!""
+";Passed
+TC009;Connexion avec champs vides;"1. Cliquer sur ""Login"" sans remplir les champs";Blocage + messages de validation;"Message navigateur “Veuillez renseigner ce champ"" sur le champ (Email adresse)";Passed
+TC010;"Bouton ""Logout""";"1. Se connecter2. Cliquer sur ""Logout""3. Vérifier le retour à la page d’accueil";"Déconnexion réussie, bouton ""Login"" réaffiché";"Déconnexion réussie
+
+Redirection vers la page d’accueil
+
+Bouton Login visible à nouveau";Passed
